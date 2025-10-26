@@ -1,11 +1,11 @@
 name: nodejs application build
 on: 
   workflow_dispatch:
-  inputs:
-    use-cache:
-      description: 'Enable caching for node modules'
-      default: 'true'
-      type: boolean
+    inputs:
+      use-cache:
+        description: 'Enable caching for node modules'
+        default: true
+        type: boolean
 
 jobs:
   build:
