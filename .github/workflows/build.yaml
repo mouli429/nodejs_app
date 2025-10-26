@@ -10,9 +10,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./node_app
+    # defaults:
+    #   run:
+    #     working-directory: ./node_app
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
