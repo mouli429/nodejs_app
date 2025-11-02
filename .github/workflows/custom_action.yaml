@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: print files
+        run: ls -la 
       - name: setup node and dependencies
         uses: ./.github/actions/composite-cache
         with:
